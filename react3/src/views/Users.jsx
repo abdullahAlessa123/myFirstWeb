@@ -10,7 +10,7 @@ const Users = () => {
 
     const [users, setUsers] = useState([]);
 const [loading, setLoading] = useState(false);
-    const {setNotification , currentUser , setToken} = useStateContext()
+    const {setNotification , currentUser , setToken , setUser} = useStateContext()
 
 useEffect(() => {
 
@@ -29,7 +29,8 @@ const onDelete = (u) => {
         getUsers()
         if(u.id === currentUser.id){
             localStorage.delete('ACCESS_TOKEN');
-            setToken = '';
+            setUser({})
+            setToken(null)
         }
 
     })
