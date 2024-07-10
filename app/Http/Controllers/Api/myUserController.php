@@ -119,7 +119,7 @@ class myUserController extends Controller
         $token = $user->currentAccessToken();
 
         try {
-            //$token->delete();
+            $token->delete();
         } catch (Exception $e) {
         }
 
