@@ -1,5 +1,6 @@
 import axios from "axios";
 import { error } from "laravel-mix/src/Log";
+import { useStateContext } from "./contexts/ContextProvider";
 
 const axiosClient = axios.create({
     baseURL: `${import.meta.env.VITE_API_BASE_URL}/api`
@@ -12,12 +13,12 @@ axiosClient.interceptors.request.use((config) => {
     return config;
 })
 
-axiosClient.interceptors.request.use((response) => {
+axiosClient.interceptors.response.use((response) => {
     return response;
 
 }, (error) => {
     if(response.status === 401){
-        localStorage.delete('ACCESS_TOKEN')
+        localStorage.removeItem('ACCESS_TOKEN')
     }
     throw error;
 })
