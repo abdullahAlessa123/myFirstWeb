@@ -41,7 +41,7 @@ class Example extends Component {
           {
             type: 'text',
             title: 'Certificates',
-            content: `Click <a href="http://localhost:5173/certificates" target="_blank" rel="noopener noreferrer">here</a>`,
+            content: `Click <a href="http://abdullahalialessa/certificates" target="_blank" rel="noopener noreferrer">here</a>`,
             icon: 'archive',
           } ,
 
