@@ -8,6 +8,9 @@ import DefaultLayout from "./Components/DefaultLayout.jsx";
 import Dashboard from "./views/Dashboard.jsx";
 import GuestLayout from "./Components/GuestLayout.jsx";
 import UserForm from "./views/UserForm.jsx";
+import Example from "./Components/Example.jsx";
+import Tag from "./Components/Tag.jsx";
+
 
 const router = createBrowserRouter([
 
@@ -56,6 +59,17 @@ const router = createBrowserRouter([
             },
             
         ]
+    },
+    {
+        path: '/cv' ,
+        element: <Example />,
+        
+    },
+
+    {
+        path: '/certificates' ,
+        element: <Tag />,
+        
     },
 
 
