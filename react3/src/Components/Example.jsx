@@ -9,7 +9,7 @@ class Example extends Component {
       <CV
         personalData={{
           name: 'Abdullah Ali Alessa',
-          title: 'Web developer',
+          title: 'Computer Scientist',
           image: '/photo_2024-08-11_01-19-35.jpg',
           contacts: [
             { type: 'email', value: 'aaa.com2003@gmail.com' },
@@ -27,14 +27,14 @@ class Example extends Component {
         {
             type: 'text',
             title: 'Education',
-            content: `I am a Computer Science student in my final year , With a 4.78 GPA . You can see it <a href="https://example.com" target="_blank" rel="noopener noreferrer">here</a> `,
+            content: `I am a Computer Science student at KSU in my final year , With a 4.78 GPA . `,
             icon: 'graduation',
           } ,
 
           {
             type: 'text',
             title: 'Skills',
-            content: `PHP Laravel , React , HTML , CSS , javascript , MySql , Java , C , Python , First Aid , Audacity , Word , Excel , PowerPoint , Camtasia  `,
+            content: `PHP Laravel , React , PHP , HTML , CSS , javascript , MySql , Java , C , Python , First Aid , Audacity , Word , Excel , PowerPoint , Camtasia , GitHub  `,
             icon: 'rocket',
           } ,
 
